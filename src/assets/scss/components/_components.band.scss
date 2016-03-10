@@ -1,0 +1,38 @@
+////
+/// @group bands
+////
+
+.band {
+  padding-top:    $global-padding;
+  padding-bottom: $global-padding;
+
+}
+
+.band--large {
+  // padding: double($global-padding);
+
+  @include breakpoint(large) {
+    padding-top:    double($global-padding);
+    padding-bottom: double($global-padding);
+  }
+
+}
+
+.band--huge {
+  @include breakpoint(large) {
+    padding-top:    quadruple($global-padding);
+    padding-bottom: quadruple($global-padding);
+  }
+}
+
+.band--highlight {
+  background-color: $light-gray;
+}
+
+.band--tint {
+  background-color: $light-gray;
+}
+
+.band--dark {
+  background-color: $dark-gray;
+}

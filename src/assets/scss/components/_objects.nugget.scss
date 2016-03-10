@@ -1,0 +1,35 @@
+////
+/// @group nugget
+////
+
+.nugget-group {
+  &.nugget-group--justify {
+    p {
+      text-align: justify;
+    }
+  }
+}
+
+.nugget--text__short {
+  @include breakpoint(large) {
+    min-height: 5em;
+  }
+}
+
+.nugget--text__medium {
+  @include breakpoint(large) {
+    min-height: 6em;
+  }
+}
+
+.nugget--text__tall {
+  @include breakpoint(large) {
+    min-height: 9em;
+  }
+}
+
+.nugget--heading__double {
+  @include breakpoint(large) {
+    min-height: 3em;
+  }
+}

@@ -1,0 +1,9 @@
+////
+/// @group blockquote
+////
+
+blockquote {
+  &, p {
+    font-size: rem-calc(26);
+  }
+}

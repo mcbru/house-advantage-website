@@ -1,0 +1,9 @@
+////
+/// @group posts
+////
+
+.blog-post {
+  @include breakpoint(large) {
+    margin-top: 3em;
+  }
+}

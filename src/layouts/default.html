@@ -1,0 +1,109 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Advantage</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" href="{{root}}assets/foundation-icons/foundation-icons.css">
+    <!-- <style> -->
+    <!--       .title&#45;bar { -->
+    <!--       width: 100%; -->
+    <!--       z&#45;index: 10; -->
+    <!--       transition: height .25s ease; -->
+    <!--       height: 4.5em; -->
+    <!--     } -->
+    <!--     .title&#45;bar .title&#45;bar&#45;right, .title&#45;bar .title&#45;bar&#45;left { -->
+    <!--       transition: padding&#45;top .25s ease; -->
+    <!--       padding&#45;top: 1.4em; -->
+    <!--     } -->
+    <!--     .title&#45;bar.shrink { -->
+    <!--       height: 3em; -->
+    <!--     } -->
+    <!--     .title&#45;bar.shrink .title&#45;bar&#45;right, .title&#45;bar.shrink .title&#45;bar&#45;left { -->
+    <!--       padding&#45;top: 0em; -->
+    <!--     } -->
+    <!--     .title&#45;bar .dropdown.menu li { -->
+    <!--       float: left; -->
+    <!--     } -->
+    <!--     #root { -->
+    <!--       margin&#45;top: 2em; -->
+    <!--     } -->
+    <!--   </style> -->
+  </head>
+  <body>
+    <!-- <div data&#45;sticky&#45;container> -->
+    <!--   <div class="title&#45;bar" data&#45;sticky data&#45;options="marginTop:0;"> -->
+    <!--     <div class="title&#45;bar&#45;left"> -->
+    <!--       <ul class="menu"> -->
+    <!--         <li><a href="home.html">House Advantage</a></li> -->
+    <!--       </ul> -->
+    <!--     </div> -->
+    <!--     <div class="title&#45;bar&#45;right"> -->
+    <!--       <ul class="menu"> -->
+    <!--         <li><a href="home.html">House Advantage</a></li> -->
+    <!--         <li><a href="what&#45;we&#45;do.html">What We Do</a></li> -->
+    <!--         <li><a href="about&#45;us.html">About Us</a></li> -->
+    <!--         <li><a href="why&#45;house&#45;advantage.html">Why House Advantage</a></li> -->
+    <!--         <li><a href="news.html">News</a></li> -->
+    <!--         <li><a href="careers.html">Careers</a></li> -->
+    <!--         <li><a href="contact.html">Contact</a></li> -->
+    <!--       </ul> -->
+    <!--     </div> -->
+    <!--   </div> -->
+    <!-- </div> -->
+
+    <div class="nav-bar"  data-sticky-container style="width:100%;">
+      <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+        <div class="row  column">
+          <!-- <div class="title&#45;bar&#45;right"> -->
+            <ul class="vertical  large-horizontal  menu  dropdown" data-dropdown-menu>
+              <li><a href="home.html"><i class="fi-home  size-18"></i></a></li>
+              <li><a href="solutions.html">Solutions</a>
+                <ul class="menu">
+                  <li><a href="solutions.html#products">Products</a></li>
+                  <li><a href="solutions.html#integrations">Integrations</a></li>
+                  <li><a href="solutions.html#services">Services</a></li>
+                </ul>
+              </li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="the-house-advantage.html">The House Advantage</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="careers.html">Careers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    {{> body}}
+
+    <hr>
+    <div class="menu-centered">
+      <ul class="menu">
+        <li><a href="#"><i class="fi-social-linkedin  size-48"></i></a></li>
+        <li><a href="#"><i class="fi-social-twitter  size-48"></i></a></li>
+        <li><a href="#"><i class="fi-mail  size-48"></i></a></li>
+      </ul>
+    </div>
+    <div class="menu-centered">
+      <ul class="menu  vertical  large-horizontal">
+        <li>&copy; 2016 House Advantage, LLC&nbsp;</li>
+        <li>10100 W. Charleston Blvd., Ste. 130, Las Vegas, NV 89135</li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <!-- <script src="{{root}}assets/js/app.js"></script> -->
+  </body>
+</html>

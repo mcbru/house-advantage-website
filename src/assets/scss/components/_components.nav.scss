@@ -1,0 +1,13 @@
+////
+/// @group nav bar
+////
+
+.nav-bar {
+  background-color: $light-gray;
+}
+
+@include breakpoint(large) {
+  .top-bar {
+    padding: 0.5rem;
+  }
+}
